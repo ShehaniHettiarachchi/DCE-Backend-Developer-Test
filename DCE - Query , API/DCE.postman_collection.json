@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "080205e7-e1e3-4259-abd0-98e3114f83e7",
+		"name": "DCE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20199948"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get All Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3502/CustomerController",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3502",
+							"path": [
+								"CustomerController"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"EAC3A93B-9F1B-46E6-B9E8-E24F569B4777\",\r\n  \"username\": \"she_94\",\r\n  \"email\": \"shehani@gmail.com\",\r\n  \"firstName\": \"Shehani\",\r\n  \"lastName\": \"Hettiarachchi\",\r\n  \"createdOn\": \"2023-12-04 17:26:19.563\",\r\n  \"isActive\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/api/Customer/Create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"api",
+								"Customer",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"EAC3A93B-9F1B-46E6-B9E8-E24F569B4777\",\r\n  \"username\": \"shehani_94\",\r\n  \"email\": \"shehani@gmail.com\",\r\n  \"firstName\": \"Rasadi\",\r\n  \"lastName\": \"Hettiarachchi\",\r\n  \"createdOn\": \"2023-12-04 17:26:19.563\",\r\n  \"isActive\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7245/EAC3A93B-9F1B-46E6-B9E8-E24F569B4777",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"EAC3A93B-9F1B-46E6-B9E8-E24F569B4777"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/812006E0-1F5E-433E-BB18-13BB1C73B167",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"812006E0-1F5E-433E-BB18-13BB1C73B167"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Active Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/api/Customer/521994B7-F4DC-412B-BEAB-0269AA779EF3/ActiveOrders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"api",
+								"Customer",
+								"521994B7-F4DC-412B-BEAB-0269AA779EF3",
+								"ActiveOrders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Supplier",
+			"item": [
+				{
+					"name": "Get Suppliers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/api/Supplier",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"api",
+								"Supplier"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/api/Product",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"api",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7245/api/Orders",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7245",
+							"path": [
+								"api",
+								"Orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
